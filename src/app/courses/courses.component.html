@@ -1,0 +1,12 @@
+
+<div>
+    <h3>{{title}}</h3>
+    <!--Below line is used to do two way binding , angular provide a more easy way for two way binding which is shown is next line 
+        <input [value]="email" (keyup.enter)="email = $any($event.target).value; onKeyUp()"/>  -->
+    <input [(ngModel)]="email" (keyup.enter)="onKeyUp()"/> 
+    <ul>
+        <li *ngFor="let course of courses">{{course}}</li>
+
+    </ul>
+</div>
+

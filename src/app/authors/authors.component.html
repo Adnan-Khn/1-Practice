@@ -1,0 +1,9 @@
+<h3>{{title}}</h3>
+<ol>
+    <li *ngFor="let author of authors">{{author}}</li>
+</ol>
+
+<img src="{{ImgURL}}">
+<br>
+<button class="btn btn-secondary"[class.active]="isActive" (click) = "onClick($event)">Submit</button>
+
